@@ -1,0 +1,25 @@
+<odoo>
+  <data>
+
+    <record model="ir.ui.view" id="cinemulti.cinemulti_group">
+      <field name="name">Filtro de salas</field>
+      <field name="model">cine.horario_sala_model</field>
+      <field name="arch" type="xml">
+        <search>
+          <field name="precio"/>
+          <field name="pelicula"/>
+          <field name="hora"/>
+          <field name="sala"/>
+          <field name="butacas_libres"/>
+          <group expand="0" string="Agrupar por">
+            <filter name="sala" context="{'group_by':'sala'}" />
+          </group>
+        </search>
+      </field>
+    </record>
+
+
+
+
+  </data>
+</odoo>
