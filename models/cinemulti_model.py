@@ -8,7 +8,7 @@ class cinemulti_model(models.Model):
     _inherit='cine.horario_sala_model'
     _description = 'cinemulti'
 
-    
+    es3d = fields.Boolean(String="Es 3d",required=True)
 #     name = fields.Char()
 #     value = fields.Integer()
 #     value2 = fields.Float(compute="_value_pc", store=True)

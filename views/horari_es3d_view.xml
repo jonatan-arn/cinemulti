@@ -1,0 +1,27 @@
+<odoo>
+  <data>
+    <record model="ir.ui.view" id="cinemulti.cinemulti_view">
+      <field name="name">Horari multi con extension de 3d</field>
+      <field name="model">cinemulti.cinemulti_model</field>
+      <field name="mode">primary</field>
+      <field name="inherit_id" ref="cine.listado_horarios_tree"/>
+      <field name="arch" type="xml">
+        <field name="hora" position="after">
+          <field name="es3d" />
+        </field>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="cinemulti.cinemulti_view_form">
+      <field name="name">Horari multi con extension de 3d</field>
+      <field name="model">cinemulti.cinemulti_model</field>
+      <field name="mode">primary</field>
+      <field name="inherit_id" ref="cine.listado_horarios_form"/>
+      <field name="arch" type="xml">
+        <field name="hora" position="after">
+          <field name="es3d" />
+        </field>
+      </field>
+    </record>
+  </data>
+</odoo>

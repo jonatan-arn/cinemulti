@@ -25,6 +25,7 @@
     'data': [
         # 'security/ir.model.access.csv',
         'views/views.xml',
+        'views/horari_es3d_view.xml',
         'views/templates.xml',
     ],
     # only loaded in demonstration mode
