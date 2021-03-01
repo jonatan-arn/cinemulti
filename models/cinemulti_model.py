@@ -4,7 +4,7 @@ from odoo import models, fields, api
 
 
 class cinemulti_model(models.Model):
-    _name = 'cinemulti.cinemulti_model'
+    _name = 'cine.horario_sala_model'
     _inherit='cine.horario_sala_model'
     _description = 'cinemulti'
 
